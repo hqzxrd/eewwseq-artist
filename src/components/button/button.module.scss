@@ -1,0 +1,38 @@
+.button {
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  font-size: 48px;
+  color: #d5d5d5;
+
+  border: black 1px solid;
+  border-radius: 30px;
+  padding: 0.3vw 7vw 0.3vw 7vw;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(103%);
+    background-color: #151719;
+    box-shadow: #c71d41 0px 0px 20px;
+  }
+  &:active {
+    transform: translateY(1px 0px);
+  }
+}
+
+@media (max-width: 1365px) {
+  .button {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .button {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 26px;
+  }
+}

@@ -1,48 +1,45 @@
+import { FC } from "react";
+
 import "./style.scss";
 import "./stylenull.scss";
-function App() {
+
+import Button from "./components/button/Button";
+import Link from "./components/link/Link";
+
+const buttons = [`Прайс`, `Мой подход к работе`, `КнOпка 3`];
+const socialLinks = [
+  { link: `https://vk.com/eewwseqq`, icon: "./vk_icon.png" },
+  { link: `https://www.deviantart.com/eewwseq`, icon: `./deviant_icon.png` },
+  { link: `https://www.artstation.com/eewwseq`, icon: `./vk_icon.png` },
+];
+
+const App: FC = () => {
   return (
     <>
       <div className="main">
         <div className="main-image">
-          <img src="/1.png" alt="" />
+          <img src="./1.png" alt="" />
         </div>
 
         <div className="main_block">
           <h1>EeWwseq</h1>
-          <p>Я люта люблю чаи гонять долго рисую фон у миня запор</p>
+          <p>Я люта люблю чаи гонять и уже неделю рисую фон!!!!!!!!!</p>
+
           <div className="main_menu">
-            <div className="main_menu-button">Прайс</div>
-            <div className="main_menu-button">Мой подход к работе</div>
-            <div className="main_menu-button">Книпка 3</div>
+            {buttons.map((val, i) => {
+              return <Button value={val} key={i} />;
+            })}
+
             <div className="main_menu-links">
-              <a
-                href="https://vk.com/eewwseqq"
-                className="main_menu-link"
-                target="_blank"
-              >
-                <img src="./vk_icon.png" alt="" />
-              </a>
-              <a
-                href="https://www.deviantart.com/eewwseq"
-                className="main_menu-link"
-                target="_blank"
-              >
-                <img src="./deviant_icon.png" alt="" />
-              </a>
-              <a
-                href="https://www.artstation.com/eewwseq"
-                className="main_menu-link"
-                target="_blank"
-              >
-                <img src="./artstation_icon.png" alt="" />
-              </a>
+              {socialLinks.map(({ link, icon }, i) => {
+                return <Link link={link} icon={icon} key={i} />;
+              })}
             </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default App;
