@@ -7,7 +7,7 @@ interface props {
   icon: string;
 }
 
-const Link: FC<props> = ({ link, icon }) => {
+const SCLink: FC<props> = ({ link, icon }) => {
   return (
     <a href={link} className={styles.link} target="_blank">
       <img src={icon} className={styles.link_icon} alt="my social link" />
@@ -15,4 +15,4 @@ const Link: FC<props> = ({ link, icon }) => {
   );
 };
 
-export default Link;
+export default SCLink;
