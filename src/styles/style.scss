@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 body {
-  // background-color: #151719;
   background-image: url("/back.jpg");
   overflow: hidden;
   font-size: 32px;
@@ -11,17 +10,6 @@ body {
 a {
   text-decoration: none;
 }
-
-// .main {
-//   display: flex;
-//   width: 98vw;
-//   .main-img {
-//     margin: 0 auto 0 auto;
-//     width: 60vw;
-//     height: auto;
-//     border-radius: 50%;
-//   }
-// }
 
 .main {
   display: flex;
@@ -34,7 +22,6 @@ a {
     img {
       position: absolute;
       bottom: -12vh;
-      opacity: 0.7;
       max-width: 37vw;
       min-width: 650px;
       min-height: 65%;

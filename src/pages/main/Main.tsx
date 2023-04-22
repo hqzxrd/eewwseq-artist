@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
 
 import "../../styles/style.scss";
 import "../../styles/stylenull.scss";

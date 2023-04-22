@@ -1,0 +1,16 @@
+.modal_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: 0 auto;
+}
