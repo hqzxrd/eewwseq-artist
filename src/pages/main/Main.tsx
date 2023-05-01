@@ -13,7 +13,7 @@ const buttons = [
 const socialLinks = [
   { link: `https://vk.com/eewwseqq`, icon: "./vk_icon.png" },
   { link: `https://www.deviantart.com/eewwseq`, icon: `./deviant_icon.png` },
-  { link: `https://www.artstation.com/eewwseq`, icon: `./vk_icon.png` },
+  { link: `https://www.artstation.com/eewwseq`, icon: `./artstation_icon.png` },
 ];
 
 const Main: FC = () => {

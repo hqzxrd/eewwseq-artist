@@ -28,5 +28,6 @@ const App: FC = () => {
     </div>
   );
 };
+//npm run deploy -- -m ""
 
 export default App;
